@@ -13,10 +13,10 @@ namespace modelBinding.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class kullaniciEntities : DbContext
+    public partial class kullaniciEntities1 : DbContext
     {
-        public kullaniciEntities()
-            : base("name=kullaniciEntities")
+        public kullaniciEntities1()
+            : base("name=kullaniciEntities1")
         {
         }
     

@@ -27,6 +27,7 @@
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Birthdate</th>
+                    <th>Detay</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,7 +37,8 @@
                     <td>@item.id</td>
                     <td>@item.firstname</td>
                     <td>@item.lastname</td>
-                    <td>@item.birtdate</td>
+                    <td>@item.birthdate</td>
+                    <td>@Html.ActionLink("Detay","Detay",new {id=item.id})</td>
                 </tr>
                 }
 

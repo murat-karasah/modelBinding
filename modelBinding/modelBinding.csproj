@@ -98,15 +98,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Models\kullaniciEntities.Context.tt">
+    <Content Include="Models\kullanıcı.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>kullaniciEntities.edmx</DependentUpon>
-      <LastGenOutput>kullaniciEntities.Context.cs</LastGenOutput>
+      <DependentUpon>kullanıcı.edmx</DependentUpon>
+      <LastGenOutput>kullanıcı.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\kullaniciEntities.tt">
+    <Content Include="Models\kullanıcı.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>kullaniciEntities.edmx</DependentUpon>
-      <LastGenOutput>kullaniciEntities.cs</LastGenOutput>
+      <DependentUpon>kullanıcı.edmx</DependentUpon>
+      <LastGenOutput>kullanıcı.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -116,39 +116,45 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\kullaniciEntities.Context.cs">
+    <Compile Include="Models\kullanıcı.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>kullaniciEntities.Context.tt</DependentUpon>
+      <DependentUpon>kullanıcı.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\kullaniciEntities.cs">
+    <Compile Include="Models\kullanıcı.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>kullaniciEntities.tt</DependentUpon>
+      <DependentUpon>kullanıcı.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\kullaniciEntities.Designer.cs">
+    <Compile Include="Models\kullanıcı.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>kullaniciEntities.edmx</DependentUpon>
+      <DependentUpon>kullanıcı.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\usertablo.cs">
-      <DependentUpon>kullaniciEntities.tt</DependentUpon>
+      <DependentUpon>kullanıcı.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\userViewIndexModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="Models\kullaniciEntities.edmx">
+    <EntityDeploy Include="Models\kullanıcı.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>kullaniciEntities.Designer.cs</LastGenOutput>
+      <LastGenOutput>kullanıcı.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\kullaniciEntities.edmx.diagram">
-      <DependentUpon>kullaniciEntities.edmx</DependentUpon>
+    <Content Include="Models\kullanıcı.edmx.diagram">
+      <DependentUpon>kullanıcı.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <Content Include="Views\user\Index.cshtml" />
     <Content Include="Views\user\Insert.cshtml" />
+    <Content Include="Views\user\Detay.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Date.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTime.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\usertablo.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Date.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\usertablo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

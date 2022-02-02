@@ -1,0 +1,25 @@
+﻿@model modelBinding.Models.usertablo
+<div class="container">
+        <form action="UserInsert" method="post">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                @*<input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" />*@
+                @Html.TextBoxFor(x=> x.firstname, new {@class="form-control" })
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                @Html.TextBoxFor(x => x.lastname, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Birth Date</label>
+                @*<input type="date" class="form-control" id="birthdate" name="birthdate" placeholder="Birt Date" />*@
+                @Html.EditorFor(x=> x.birthdate, "Date")
+            </div>
+            <p class="help-block">Example : 01.01.2022</p>
+
+            <button type="submit" class="btn btn-primary">Insert</button>
+
+        </form>
+    </div>

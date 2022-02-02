@@ -17,6 +17,6 @@ namespace modelBinding.Models
         public int id { get; set; }
         public string firstname { get; set; }
         public string lastname { get; set; }
-        public System.DateTime birtdate { get; set; }
+        public System.DateTime birthdate { get; set; }
     }
 }
